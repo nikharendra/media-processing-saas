@@ -43,6 +43,10 @@ function Home() {
         }
 
     }, [])
+    // handle delete 
+    const handleDeleteFromUI = (id: string) => {
+  setVideos((prev) => prev.filter((v) => v.id !== id));
+};
 
     if(loading){
         return <div>Loading...</div>
@@ -63,6 +67,7 @@ function Home() {
                         key={video.id}
                         video={video}
                         onDownload={handleDownload}
+                         onDelete={handleDeleteFromUI}
                     />
                 ))
               }

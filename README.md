@@ -1,36 +1,104 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Media Processing SaaS
 
-## Getting Started
+A full-stack SaaS application that allows users to upload, compress, transform, and download images & videos using cloud-based processing.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🧠 Features
+
+* 📤 Upload images and videos
+* 🎯 Automatic compression & optimization
+* 🖼️ Image transformation (resize, crop, aspect ratio)
+* 🎥 Video preview generation
+* 📥 Download optimized media
+* 🔐 User authentication
+* 📊 File size comparison (original vs compressed)
+
+---
+
+## 🛠️ Tech Stack
+
+* **Frontend & Backend:** Next.js
+* **Styling:** Tailwind CSS + DaisyUI
+* **Media Processing:** Cloudinary
+* **Database:** PostgreSQL
+* **ORM:** Prisma
+* **Authentication:** Clerk
+* **HTTP Client:** Axios
+
+---
+
+## ⚙️ How It Works
+
+1. User uploads media
+2. File is sent to backend API
+3. Cloudinary stores & processes media
+4. Metadata stored in database
+5. Media is displayed with transformations
+6. User can preview and download optimized version
+
+---
+
+## 🔗 Live Demo
+
+👉 https://your-live-link.vercel.app
+
+---
+
+## 📂 Project Structure
+
+```
+app/
+ ├── api/
+ │    ├── image-upload/
+ │    └── video-upload/
+ ├── components/
+ │    └── VideoCard.tsx
+ ├── (pages)
+lib/
+ └── prisma.ts
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🧪 Environment Variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Create `.env.local`:
 
-## Learn More
+```
+NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=your_cloud_name
+CLOUDINARY_API_KEY=your_api_key
+CLOUDINARY_API_SECRET=your_api_secret
+DATABASE_URL=your_database_url
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 Run Locally
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm install
+npm run dev
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📸 Screenshots
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+![App Screenshot](./public/images/screenshot.png)
+
+---
+
+## 📌 Key Learnings
+
+* Cloud-based media transformation using URL parameters
+* Handling large file uploads efficiently
+* Full-stack development with Next.js
+* Debugging real-world integration issues
+
+---
+
+## 👨‍💻 Author
+
+Harendra Singh Yadav
+GitHub: https://github.com/nikharendra
